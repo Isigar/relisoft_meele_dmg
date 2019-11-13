@@ -1,7 +1,7 @@
 
 Citizen.CreateThread(function ()
     while true do
-        Citizen.Wait(5)
+        Citizen.Wait(50)
         for weapon,modifier in pairs(Config.Weapons) do
             SetWeaponDamageModifier(GetHashKey(weapon),modifier)
         end
